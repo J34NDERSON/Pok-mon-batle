@@ -1,0 +1,95 @@
+body {
+  background-color: #f0f0f0;
+  font-family: monospace;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px; /* Adicionado para evitar cortes em telas menores */
+}
+
+.game-area {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px; /* Limita o tamanho em telas pequenas */
+  width: 100%; /* Garante ajuste para telas menores */
+}
+
+.pokemon-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Permite quebra em telas pequenas */
+}
+
+.pokemon-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Espaço entre linhas quando quebrar */
+}
+
+.pokemon-level {
+  font-size: 16px;
+}
+
+.hp-bar {
+  background-color: #ddd;
+  border-radius: 5px;
+  height: 10px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.hp-fill {
+  background-color: #0f0;
+  height: 10px;
+  width: 100%;
+}
+
+.moves-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Permite os botões quebrarem em linhas */
+}
+
+.move-button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  margin: 10px 5px; /* Ajusta margens para telas pequenas */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.move-button:hover {
+  background-color: #ddd;
+}
+
+/* Regras de mídia para responsividade */
+@media (max-width: 600px) {
+  .pokemon-name {
+    font-size: 20px; /* Reduz tamanho da fonte */
+  }
+
+  .pokemon-level {
+    font-size: 14px; /* Reduz tamanho da fonte */
+  }
+
+  .game-area {
+    padding: 15px; /* Ajusta padding para caber em telas pequenas */
+  }
+
+  .move-button {
+    padding: 8px 15px; /* Reduz tamanho dos botões */
+    font-size: 14px; /* Ajusta fonte dos botões */
+  }
+}
