@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Battle</title>
+  <link rel="stylesheet" href="pokemon.css">
+</head>
+<body>
+  <h1 class="title">Pokémon Battle</h1>
+  
+  <div class="game-container">
+    <div class="player-container">
+      <h2>Seu Pokémon:</h2>
+      <div class="pokemon" id="player-pokemon">
+        <img src="pikachu.png" alt="Pikachu">
+        <p id="player-pokemon-name">Pikachu</p>
+        <p id="player-pokemon-hp">HP: 100</p>
+      </div>
+    </div>
+    
+    <div class="enemy-container">
+      <h2>Adversário:</h2>
+      <div class="pokemon" id="enemy-pokemon">
+        <img src="charmander.png" alt="Charmander">
+        <p id="enemy-pokemon-name">Charmander</p>
+        <p id="enemy-pokemon-hp">HP: 100</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="battle-container">
+    <button id="attack-button">Atacar</button>
+    <button id="heal-button">Curar</button>
+    <button id="run-button">Fugir</button>
+  </div>
+  
+  <p id="battle-log"></p>
+
+  <script src="pokemon.js"></script>
+</body>
+</html>
