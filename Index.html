@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batalha de Pokémon GBA</title>
+  <link rel="stylesheet" href="css/pokemon.css">
+</head>
+<body>
+  <div class="container">
+    <div class="game-area">
+
+      <!-- Charmander (rival) -->
+      <div class="pokemon-section rival">
+        <div class="pokemon-info rival-info">
+          <div class="pokemon-name">Charmander</div>
+          <div class="pokemon-level">Lv 25</div>
+        </div>
+        <div class="hp-bar rival-hp">
+          <div class="hp-fill" style="width: 100%;"></div>
+        </div>
+        <div class="pokemon-space rival-space"></div>
+      </div>
+
+      <!-- Pikachu (jogador) -->
+      <div class="pokemon-section player">
+        <div class="pokemon-space player-space"></div>
+        <div class="pokemon-info player-info">
+          <div class="pokemon-name">Pikachu</div>
+          <div class="pokemon-level">Lv 25</div>
+        </div>
+        <div class="hp-bar player-hp">
+          <div class="hp-fill" style="width: 100%;"></div>
+        </div>
+      </div>
+
+      <!-- Lista de movimentos -->
+      <div class="moves-list">
+        <div class="move-button" onclick="attack('Thunderbolt')">Thunderbolt</div>
+        <div class="move-button" onclick="attack('Quick Attack')">Quick Attack</div>
+        <div class="move-button" onclick="attack('Iron Tail')">Iron Tail</div>
+        <div class="move-button" onclick="attack('Electro Ball')">Electro Ball</div>
+      </div>
+
+    </div>
+  </div>
+  <script src="pokemon.js"></script>
+</body>
+</html>

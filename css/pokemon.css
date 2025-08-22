@@ -1,0 +1,134 @@
+body {
+  background-color: #f0f0f0;
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.game-area {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* espaço entre seções */
+  position: relative;
+
+  /* Fundo estilo batalha Pokémon GBA */
+  background-image: url("../src/battle-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Seções de Pokémon */
+.pokemon-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Info do Pokémon */
+.pokemon-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.pokemon-name {
+  font-size: 18px;
+}
+
+/* Barras de HP */
+.hp-bar {
+  background-color: #ddd;
+  border-radius: 5px;
+  height: 12px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.hp-fill {
+  background-color: #0f0;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+/* Espaço para sprites */
+.pokemon-space {
+  height: 130px;
+  width: 160px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Charmander em cima à direita */
+.rival {
+  align-items: flex-end;
+}
+
+.rival-space {
+  background-image: url("../src/charmander.gif");
+  margin-top: 10px;  /* espaço entre HP e sprite */
+}
+
+/* Pikachu embaixo à esquerda */
+.player {
+  align-items: flex-start;
+}
+
+.player-space {
+  background-image: url("../src/pikachu.png");
+  margin-bottom: 10px; /* espaço entre sprite e HP */
+}
+
+/* Lista de movimentos */
+.moves-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.move-button {
+  flex: 1 1 calc(50% - 10px);
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+
+.move-button:hover {
+  background-color: #ddd;
+}
+
+/* Responsivo para PC */
+@media (min-width: 600px) {
+  .moves-list {
+    flex-wrap: nowrap;
+  }
+
+  .move-button {
+    flex: none;
+    min-width: 120px;
+  }
+}
