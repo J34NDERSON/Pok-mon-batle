@@ -23,23 +23,19 @@ body {
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 30px; /* espaço entre seções */
+  gap: 30px;
   position: relative;
-
-  /* Fundo estilo batalha Pokémon GBA */
   background-image: url("../src/battle-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* Seções de Pokémon */
 .pokemon-section {
   display: flex;
   flex-direction: column;
 }
 
-/* Info do Pokémon */
 .pokemon-info {
   display: flex;
   justify-content: space-between;
@@ -52,7 +48,6 @@ body {
   font-size: 18px;
 }
 
-/* Barras de HP */
 .hp-bar {
   background-color: #ddd;
   border-radius: 5px;
@@ -69,36 +64,30 @@ body {
   transition: width 0.3s ease;
 }
 
-/* Espaço para sprites */
 .pokemon-space {
   height: 130px;
   width: 160px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Charmander em cima à direita */
 .rival {
   align-items: flex-end;
 }
 
 .rival-space {
-  background-image: url("../src/charmander.gif");
-  margin-top: 10px;  /* espaço entre HP e sprite */
+  margin-top: 10px;
 }
 
-/* Pikachu embaixo à esquerda */
 .player {
   align-items: flex-start;
 }
 
 .player-space {
-  background-image: url("../src/pikachu.png");
-  margin-bottom: 10px; /* espaço entre sprite e HP */
+  margin-bottom: 10px;
 }
 
-/* Lista de movimentos */
 .moves-list {
   display: flex;
   flex-wrap: wrap;
@@ -121,7 +110,6 @@ body {
   background-color: #ddd;
 }
 
-/* Responsivo para PC */
 @media (min-width: 600px) {
   .moves-list {
     flex-wrap: nowrap;
