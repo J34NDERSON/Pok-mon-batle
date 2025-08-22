@@ -25,7 +25,7 @@ body {
   flex-direction: column;
   gap: 30px;
   position: relative;
-  background-image: url("../src/battle-bg.png");
+  /* background-image: url("../src/battle-bg.png"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
